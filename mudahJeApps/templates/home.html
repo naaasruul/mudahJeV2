@@ -1,0 +1,15 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+    <div class="container d-flex justify-content-center  flex-column align-items-center">
+        <h1>Logo</h1>
+        <div class="d-flex gap-3">
+            <a href="{% url '' %}"><button type="button" class="btn btn-secondary">Pilih Perbualan</button></a>
+            <button type="button" class="btn btn-secondary">Mahu Belajar</button>
+        </div>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem excepturi quas hic neque, a culpa natus libero alias aperiam nam tenetur harum atque voluptatibus iusto nulla quis dolores amet porro?</p>
+    </div>
+{% endblock %}
