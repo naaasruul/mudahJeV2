@@ -11,3 +11,6 @@ def page(request):
 
 def pilihPerbualan(request):
     return render(request, 'pilihPerbualan.html')
+
+def mahuBelajar(request):
+    return render(request, 'mahuBelajar.html')

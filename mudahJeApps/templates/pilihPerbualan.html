@@ -2,27 +2,87 @@
 {% block title %}Pilih Perbualan{% endblock %}
 {% block content %}
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<!--  content -->
+<div class="container">
+  <div class="row">
+    <!-- Video Section -->
+    <div class="col-md-6 video-container">
+      <video width="100%" controls>
+        <source src="your-video-file.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
-    <div class="offcanvas-body">
-      <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-      </div>
-      <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
+
+    <!-- Quiz Section -->
+    <div class="col-md-6 quiz-container">
+      <h3>Quiz Question</h3>
+      <p>What is the capital of France?</p>
+      <form>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="quiz-answer" id="answerA" value="A">
+          <label class="form-check-label" for="answerA">
+            A. Berlin
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="quiz-answer" id="answerB" value="B">
+          <label class="form-check-label" for="answerB">
+            B. Madrid
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="quiz-answer" id="answerC" value="C">
+          <label class="form-check-label" for="answerC">
+            C. Paris
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="quiz-answer" id="answerD" value="D">
+          <label class="form-check-label" for="answerD">
+            D. Rome
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
     </div>
   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Mudah Je</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="mt-3">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
   
   
 {% endblock %}

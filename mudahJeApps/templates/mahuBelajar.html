@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %}Pilih Perbualan{% endblock %}
+{% block content %}
+
+<!--  content -->
+<div class="container mt-4">
+    <div class="row d-flex align-items-center">
+      <!-- Sidebar -->
+      <div class="col-md-3 sidebar">
+        <h2>Pilih Kategori</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Ucapan</li>
+          <li class="list-group-item">Kata Ganti Nama</li>
+          <li class="list-group-item">Keluarga</li>
+          <li class="list-group-item">Kata Tanya</li>
+          <li class="list-group-item">Kata Penghubung</li>
+          <li class="list-group-item">Kata Bantu</li>
+          <li class="list-group-item">Perasaan</li>
+          <li class="list-group-item">Kata Kerja</li>
+          <li class="list-group-item">Kata Sifat</li>
+          <!-- Add more sidebar items as needed -->
+        </ul>
+      </div>
+      <!-- Main Content -->
+      <div class="col-md-9">
+        <div class="row d-flex justify-content-center align-items-center mx-3">
+            <div class="col-md-6 d-flex align-self-stretch  video-container">
+                <video width="100%" controls>
+                  <source src="your-video-file.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="col-md-6 quiz-container">
+                <h3>Quiz Question</h3>
+                <p>What is the capital of France?</p>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Mudah Je</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="mt-3">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+  
+  
+{% endblock %}
